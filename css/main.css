@@ -1,4 +1,60 @@
+:root {
+    --red-color: rgb(96, 12, 12);
+}
+
 body {
     color: white;
     background-color: black;
+    margin: 0px;
+}
+
+.center-wrapper {
+    margin-left: 220px;
+}
+
+textarea {
+    background-color: black;
+    color: white;
+    border: solid 1px var(--red-color);
+    width: 83vw;
+    height: 250px;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+    border-right: solid var(--red-color) 1px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+
+    &.active {
+        color: white;
+        text-decoration: underline var(--red-color);
+        text-underline-offset: 5px;
+    }
+    &:hover {
+        color: white;
+    }
 }
